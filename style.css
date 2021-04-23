@@ -80,7 +80,7 @@ input {
     font-weight: 600;
 }
 
-span {
+a {
     color: var(--Light-Purple);
     font-weight: 400;
 }
@@ -126,7 +126,7 @@ input::placeholder{
     text-align: center;
 }
 
-.footerText p>span {
+.footerText >p a {
     color: var(--Red);
     font-weight: 700;
 }
