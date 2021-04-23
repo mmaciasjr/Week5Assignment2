@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --Red: hsl(0, 100%, 74%);
+    --Green: hsl(154, 59%, 51%);
+    --Light-Gray: hsl(0, 0%, 83%);
+    --Dark-Gray: hsl(249, 10%, 26%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    position: relative;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    background: var(--Red);
+   background-image: url('images/bg-intro-desktop.png');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+
+}
+
+input, .button {
+    border: 1px solid lightgray;
+    color: var(--Dark-Gray);
+    font: 500 14px 'Poppins', sans-serif;
+    padding: 10px 32px;
+    border-radius: 5px;
+    margin: 8px 0;
+    outline: none;
+    width: 100%;
+}

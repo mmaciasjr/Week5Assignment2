@@ -4,40 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="img/png" sizes="32x32" href="./images/favicon-32x32.png">
-    <link rel="'stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Week 5 Assignment 2</title>
 </head>
 
 <body>
 <div class="container">
+
     <div class="learnCode">
         <h1 class="learnCodeTitle">Learn to code by watching others</h1>
-        <p class="learnCodeParagraph"> See how experienced developers sove problems in real-time. Watching scripted
+        <p> See how experienced developers solve problems in real-time. Watching scripted
             tutorials is great, but understanding how developers think is invaluable</p>
     </div>
+
     <div class="infoForm">
-        <div class="trial">
-            <p><span>Try it free 7 days</span> then $20/mo. thereafter</p>
+        <div class="trialHeader">
+            <p>Try it free 7 days<span>then $20/mo. thereafter</span></p>
         </div>
-        <form class="mainDemoForm"></form>
-        <div class="demoFormInfo">
-            <input type="text" class="demoInput" placeholder="First Name" autocomplete="nofill">
-            <img src="./images/icon-error.svg" alt="error icon">
-        </div>
-        <div class="demoFormInfo">
-            <input type="text" class="demoInput" placeholder="Last Name" autocomplete="nofill">
-            <img src="./images/icon-error.svg" alt="error icon">
-        </div>
-        <div class="demoFormInfo">
-            <input type="text" class="demoInput" placeholder="Email Address" autocomplete="nofill">
-            <img src="./images/icon-error.svg" alt="error icon">
-        </div>
-        <div class="demoFormInfo">
-            <input type="text" class="demoInput" placeholder="Password" autocomplete="nofill">
-            <img src="./images/icon-error.svg" alt="error icon">
+        <form name="Form" class="mainDemoForm">
+
+        <div class="formFirstName">
+                <input type="text" name="firstName" placeholder="First Name">
         </div>
 
-        <button class="freeTrial" type="submit">Claim your free trial</button>
+        <div class="formLastName">
+                <input type="text" name="lastName" placeholder="Last Name" >
+        </div>
+
+        <div class="formEmail">
+                <input type="text" name="emailAddress" placeholder="Email Address">
+        </div>
+        <div class="formPassword">
+                <input type="text" name="formPassword" Placeholder="Password">
+        </div>
+        <div class="trialButton" role="button">
+            Claim your free trial
+        </div>
+            <div class="footerText">
+        <p class="formTerms">By clicking the button, you are agreeing to our <a>Terms and Services</a>
+        </p>
+            </div>
+        </form>
+</div>
 </div>
 </body>
 </html>
