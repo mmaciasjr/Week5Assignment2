@@ -73,11 +73,17 @@ input {
     padding: 16px;
     margin-bottom: 32px;
     text-align: center;
+    box-shadow: 5px 5px 10px rgb(69, 69, 69);
 }
 
-.header > p{
+.trialHeader > p{
     color: var(--White);
     font-weight: 600;
+}
+
+span {
+    color: var(--Light-Purple);
+    font-weight: 400;
 }
 
 a {
@@ -110,7 +116,11 @@ input, .trialButton {
     text-align: center;
 }
 
-.trialButton:hover {
+.trialButton:active{
+transform: scale(0.98);
+}
+
+.trialButton:hover{
     cursor: pointer;
     opacity: 0.8;
 }
@@ -129,5 +139,36 @@ input::placeholder{
 .footerText >p a {
     color: var(--Red);
     font-weight: 700;
+}
+
+@media(max-width: 768px) {
+
+    html, body {
+    height: auto
+    }
+
+    body {
+        background-image: url("images/bg-intro-mobile.png");
+        background-repeat: no-repeat;
+        background-position: top;
+        background-size: auto;
+        margin: 5rem 0;
+    }
+
+    .learnCode, .infoForm {
+       width: 100%;
+    }
+
+    .learnCode {
+        margin-bottom: 64px;
+        text-align: center;
+    }
+
+    .container {
+        width: 90%;
+        flex-direction: column;
+    }
+
+
 }
 
